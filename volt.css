@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.nav {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 1em 3em 1em 1em;
+}
+.nav div {
+  padding-top: 1.3em;
+  text-align: right;
+  font-size: 17px;
+}
+
+#logo {
+  padding-top: 0;
+  text-align: unset;
+}
+
+#logoimg {
+  width: 5vw;
+  margin-left: 1em;
+}
+
+#bookb {
+  padding-top: 0.8em;
+}
+
+#book {
+  background-color: #a6cc45;
+  color: white;
+  padding: 0.5em 1em 0.5em 1em;
+  font-size: 17px;
+  width: 8vw;
+  border-radius: 5px;
+}
+
+.video {
+  background-image: url(img/video.png);
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+}
+.howdoes {
+  text-align: center;
+  margin-top: 4em;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2em;
+  margin: 5em 5em 2em 5em;
+  font-size: 19px;
+}
+
+.icons img {
+  width: 16vw;
+}
+
+.lifesaver {
+  background-color: #e8e8e8;
+  text-align: center;
+  padding: 2em;
+}
+
+.savercon {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#superman {
+  height: 60vh;
+}
