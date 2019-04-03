@@ -7,19 +7,28 @@ img {
 
 body {
   margin: 0;
+  font-family: "Proxima Nova", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bolder;
 }
 
 .nav {
   background-color: black;
   color: white;
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
   padding: 1em 3em 1em 1em;
 }
 .nav div {
   padding-top: 1.3em;
   text-align: right;
   font-size: 17px;
+  font-weight: bolder;
 }
 
 #logo {
@@ -80,5 +89,181 @@ body {
 }
 
 #superman {
-  height: 60vh;
+  height: 75vh;
+  margin-top: 2em;
+}
+.rightcont {
+  width: 35vw;
+}
+
+.animation {
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
+#anim {
+  height: 36vh;
+
+  border: solid 0.5em white;
+}
+
+.info1,
+.info2 {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 1em;
+  padding: 1em;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+#battery,
+#swap {
+  width: 5vw;
+  margin-left: 1em;
+  position: relative;
+  top: 2em;
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+.counter {
+  text-align: center;
+  margin: 4em;
+  font-size: 30px;
+}
+
+#count {
+  font-size: 90px;
+  font-weight: bolder;
+}
+
+.revbox {
+  background-color: #ececec;
+  padding: 1em;
+  margin: 8em 8em 2em 5em;
+  text-align: justify;
+  padding-right: 2em;
+  padding-left: 2em;
+  -webkit-box-shadow: 6px 8px 19px -2px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 6px 8px 19px -2px rgba(0, 0, 0, 0.32);
+  box-shadow: 6px 8px 19px -2px rgba(0, 0, 0, 0.32);
+}
+
+#stars {
+  text-align: center;
+  padding-top: 2em;
+}
+
+#rating {
+  width: 10vw;
+}
+
+.dots {
+  text-align: center;
+}
+
+#dot {
+  width: 3vw;
+}
+
+.booking {
+  background-color: #ececec;
+  text-align: center;
+  padding: 4em;
+}
+
+#charger {
+  width: 45vw;
+  position: relative;
+  top: 10vh;
+  right: 5vw;
+}
+
+#phone {
+  width: 25vw;
+  position: relative;
+  top: -4vh;
+  left: -40vw;
+  transition: all 1s ease-out;
+  opacity: 0;
+}
+
+#phone.fade-right {
+  left: 0.85vw;
+  opacity: 1;
+}
+
+.booking div {
+  padding: 5em;
+  font-size: 20px;
+}
+
+.booking span {
+  font-weight: bold;
+}
+
+.booking button {
+  background-color: #a6cc45;
+  color: white;
+  padding: 0.75em 1em 0.75em 1em;
+  font-size: 17px;
+  width: 16vw;
+  border-radius: 5px;
+}
+
+.energy {
+  background-color: #a6cc45;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4em 8em 4em 8em;
+  text-align: center;
+  font-size: 22px;
+}
+
+.left {
+  padding: 2.5em;
+}
+.windmill {
+  padding-top: 4em;
+}
+
+#mill {
+  width: 18vw;
+}
+
+#natur {
+  width: 9vw;
+}
+
+.left p {
+  padding-bottom: 1em;
+}
+
+.connect {
+  background-color: #414141;
+  color: white;
+  margin: 0;
+  height: 8vh;
+}
+
+.connect p {
+  margin: 0;
+  padding: 1.5em;
+  margin-left: 4vw;
+  font-size: 18px;
+}
+
+.blog {
+  background-color: #343436;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
