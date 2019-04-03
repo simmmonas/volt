@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="sheet.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <title>Document</title>
+</head>
+
+    <nav class="navEdit">
+        <ul>
+            <a href="cart.html">
+          <li>CART</li> 
+            </a>
+          <a href="register.html">
+          <li>REGISTER</li>
+          </a>
+          <a href="summary.html">
+          <li>SUMMARY</li>
+          </a>
+          <li>PAYMENT</li>
+        </ul>
+      </nav>
+
+<body>
+    <div class="form">
+        <div class="head" class="signup">
+            <div class="login-tab" onclick="swap(this);" data-tab="login">
+             ALREADY HAVE AN ACCOUNT   
+      
+         </div>
+         
+         <div class="signup-tab" onclick="swap(this);" data-tab="signup">
+         
+                  NEW TO VOLT
+                
+                 </div>
+        </div>
+ 
+        <div class="body" id="form-body">
+            <div class="login">
+                <div class="form-row">
+                     <i class="fas fa-envelope fa-3x"> <input type="email" placeholder="email"> </i>
+                   <i class="fas fa-lock fa-3x"> <input type="password" placeholder="password"> </i>
+                   <button>Login</button>
+                </div>
+            </div>
+ 
+            <div class="signup">
+                
+                 <div class="form-row">
+                     <div class="supt">
+                         <h2>SIGN UP</h2>
+                         <i class="fab fa-facebook fa-3x"></i>
+                         <h3>Continue with facebook to checkout faster</h3>
+                 </div>
+                     <h1 class="texts">Email</h1>
+                      <input type="email" placeholder="Email">
+                      <h1 class="texts">Name</h1>
+                     <input type="password" placeholder="Name" pattern="[a-zA-Z0-9]+"> 
+                     <h1 class="texts">Country</h1>
+                     
+                     <select class="custom-select">
+                         <option value="0">Denmark</option>
+                         <option value="1">Poland</option>
+                         <option value="2">Sweden</option>
+                         <option value="3">Norway</option>
+ 
+                         <option value="4">France</option>
+                         <option value="5">Belgium</option>
+                         <option value="6">Germany</option>
+                         <option value="7">Spain</option>
+                       </select>
+ 
+ 
+                     <h1 class="texts">Phone No</h1>
+                     <input type="text" placeholder="Phone No.">
+                     <h1 class="texts">Password</h1>
+                     <input type="password" placeholder="Password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+                    <input type="submit" class="submitbtn">
+                 </div>
+             </div>
+        </div>
+    </div>
+    
+ <!--pattern="[A-Za-z]{3}"-->
+ 
+    <script src="js/script1.js"></script>
+</body>
+
+</html>

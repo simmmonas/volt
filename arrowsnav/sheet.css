@@ -1,0 +1,189 @@
+body {
+    font-family: 'Proxima Nova', sans-serif;
+}
+nav {
+    height: 100px;
+    padding: 10px;
+
+    
+
+   
+    }
+
+    h1 {
+        border-bottom: 1px solid black;
+    }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+  }
+
+  ul a {
+      text-decoration: none;
+  }
+  
+  li {
+  
+    position: relative; /* so we can absolutely position the ::before and ::after overlays (arrows) */
+    margin-right: 18px; /* space them out */
+    padding: 10px 19px 11px 40px;
+    background-color: #A6CC45;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px; /* space the letters a bit more */
+    text-align: center;
+    cursor: pointer;
+    
+  }
+  li:hover {
+     
+      color: black;
+      cursor: pointer;
+  }
+  li::before {
+      content: ''; /* NEED a content attribute or element content won't exist and element will be "blank!" */
+    position: absolute; /* to overlay on top of <li> */
+    top: 0; /* align at top */
+    left: 0; /* align to far left of each nav item */
+    width: 0; /* remember this? */
+    height: 0; /* remember this? */
+    border: 21px solid transparent; /* border all sides */
+    border-left: 21px solid #fff; /* override left border */
+    
+  }
+  li::after {
+    content: ''; /* NEED a content attribute or element content won't exist and element will be "blank!" */
+    position: absolute; /* to overlay on top of <li> */
+    top: 0px; /* align to top */
+    right: -43px; /* put 40px OUTSIDE of the right edge of each nav item; hence negative values */
+    width: 0; /* remember this? */
+    height: 0; /* remember this? */
+    border: 22px solid transparent; /* border all sides */
+    border-left: 22px solid #A6CC45; /* override left border */
+  }
+
+  li::after:hover {
+      background-color: white;
+  }
+  
+
+
+  .wrapperMain {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 3fr 1.5fr;
+      grid-gap: 20px;
+
+  }
+
+
+  .payment {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 30px;
+      -webkit-box-shadow: 6px 8px 19px -2px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 6px 8px 19px -2px rgba(0, 0, 0, 0.32);
+  box-shadow: 6px 8px 19px -2px rgba(0, 0, 0, 0.32);
+  }
+
+
+  .account {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      -webkit-box-shadow: 6px 8px 19px -2px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 6px 8px 19px -2px rgba(0, 0, 0, 0.32);
+  box-shadow: 6px 8px 19px -2px rgba(0, 0, 0, 0.32);
+  }
+
+
+  .order {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr;
+    
+    -webkit-box-shadow: 6px 8px 19px -2px rgba(0, 0, 0, 0.32);
+-moz-box-shadow: 6px 8px 19px -2px rgba(0, 0, 0, 0.32);
+box-shadow: 6px 8px 19px -2px rgba(0, 0, 0, 0.32);
+}
+
+  .order, .account, .payment {
+      border: none;
+
+  }
+
+
+
+  .h5 {
+      font-weight: bolder;
+     
+
+  }
+
+
+
+  .ord1 {
+      display: grid;
+      grid-template-columns: 6fr 1fr;
+      grid-template-rows: 1fr;
+      align-items: center;
+      text-align: center;
+      
+  }
+
+  .ord2 {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+        text-align: center;
+    border-top: 1px lightgray solid;
+    
+}
+  
+
+
+  .imgicon {
+      height: 80px;
+      width: 100px;
+      position: relative;
+      right: -4em;
+      
+
+  }
+
+
+  .icon1 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      
+      align-items: center;
+      -webkit-box-shadow: 6px 8px 19px -2px rgba(0, 0, 0, 0.32);
+      -moz-box-shadow: 6px 8px 19px -2px rgba(0, 0, 0, 0.32);
+      box-shadow: 6px 8px 19px -2px rgba(0, 0, 0, 0.32);
+  }
+
+  .icon1:hover {
+      border: #A6CC45 3px solid;
+  }
+
+
+
+  h4 {
+text-align: center;
+  }
+
+  .name1 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  }

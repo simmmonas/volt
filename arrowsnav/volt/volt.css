@@ -1,0 +1,428 @@
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Proxima Nova", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bolder;
+}
+
+.mainwrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.nav {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 1em 1em 1em 1em;
+  width: 100%;
+}
+
+.h {
+  display: none;
+}
+
+#logo {
+  padding-top: 0;
+  text-align: unset;
+}
+#logoimg {
+  width: 20vw;
+  margin-left: 1em;
+}
+
+#bookb {
+  padding-top: 0.8em;
+  text-align: right;
+}
+
+#book {
+  background-color: #a6cc45;
+  color: white;
+  padding: 0.5em 1em 0.5em 1em;
+  font-size: 14px;
+  width: 16vw;
+  border-radius: 5px;
+}
+
+.video {
+  background-image: url(img/video.png);
+  background-size: cover;
+  width: 100%;
+  height: 45vh;
+}
+.howdoes {
+  text-align: center;
+  margin-top: 4em;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.icons img {
+  width: 56vw;
+}
+
+.lifesaver {
+  background-color: #e8e8e8;
+  text-align: center;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#superman {
+  height: 47vh;
+  margin-top: 2em;
+}
+
+.man {
+  display: none;
+}
+
+.animation {
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
+#anim {
+  height: 28vh;
+
+  border: solid 0.5em white;
+}
+.info1,
+.info2 {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 1em;
+  padding: 1em;
+  text-align: left;
+  margin-bottom: 1em;
+}
+#battery,
+#swap {
+  width: 14vw;
+  margin-left: 1em;
+  position: relative;
+  top: 5em;
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+.counter {
+  text-align: center;
+  margin: 2em;
+  font-size: 20px;
+}
+
+#count {
+  font-size: 70px;
+  font-weight: bolder;
+}
+
+.revbox {
+  background-color: #ececec;
+  padding: 1em;
+  margin: 1em 2em 2em 2em;
+  text-align: justify;
+  padding: 1em 2em 1em 2em;
+  -webkit-box-shadow: 6px 8px 19px -2px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 6px 8px 19px -2px rgba(0, 0, 0, 0.32);
+  box-shadow: 6px 8px 19px -2px rgba(0, 0, 0, 0.32);
+}
+#stars {
+  text-align: center;
+  padding-top: 0.75em;
+}
+
+#rating {
+  width: 30vw;
+}
+.dots {
+  text-align: center;
+}
+
+#dot {
+  width: 13vw;
+}
+.booking {
+  background-color: #ececec;
+  text-align: center;
+  padding: 1em;
+}
+#charger {
+  width: 60vw;
+  position: relative;
+  top: 2vh;
+  right: 3vw;
+}
+
+#phone {
+  width: 31vw;
+  position: relative;
+  top: -4.5vh;
+  left: -90vw;
+  transition: all 1s ease-out;
+  opacity: 0;
+}
+
+#phone.fade-right {
+  left: 5vw;
+  opacity: 1;
+}
+.booking span {
+  font-weight: bolder;
+}
+.energy {
+  background-color: #a6cc45;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2em 1em 3em 3em;
+  text-align: center;
+  font-size: 13px;
+}
+
+.windmill {
+  padding-top: 6em;
+}
+
+#mill {
+  width: 29vw;
+}
+
+#natur {
+  width: 22vw;
+}
+
+.connect {
+  background-color: #414141;
+  color: white;
+  margin: 0;
+  height: 12vh;
+  padding-top: 1em;
+}
+
+.connect p {
+  margin: 0;
+  padding: 1.5em;
+  margin-left: 1vw;
+  font-size: 15px;
+}
+
+.blog {
+  background-color: #343436;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* =======================DESKTOP========================*/
+@media all and (min-width: 500px) {
+  .h {
+    display: block;
+  }
+  .man {
+    display: block;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .nav {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    padding: 0.5em 3em 0.5em 1em;
+  }
+  .nav div {
+    padding-top: 1.5em;
+    text-align: right;
+    font-size: 17px;
+    font-weight: bolder;
+  }
+
+  #logoimg {
+    width: 7vw;
+  }
+
+  #bookb {
+    padding-top: 0.8em;
+  }
+
+  #book {
+    padding: 0.5em 1em 0.5em 1em;
+    font-size: 17px;
+    width: 8vw;
+  }
+
+  .video {
+    height: 80vh;
+  }
+
+  .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2em;
+    margin: 5em 5em 2em 5em;
+    font-size: 19px;
+  }
+
+  .icons img {
+    width: 16vw;
+  }
+
+  .savercon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #superman {
+    height: 75vh;
+    margin-top: 2em;
+  }
+  .rightcont {
+    width: 35vw;
+  }
+
+  #anim {
+    height: 36vh;
+  }
+
+  #battery,
+  #swap {
+    width: 5vw;
+    top: 2em;
+  }
+
+  .reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
+
+  .counter {
+    margin: 4em;
+    font-size: 30px;
+  }
+
+  #count {
+    font-size: 90px;
+  }
+
+  .revbox {
+    padding: 1em;
+    margin: 8em 8em 2em 5em;
+    text-align: justify;
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+
+  #stars {
+    padding-top: 2em;
+  }
+
+  #rating {
+    width: 10vw;
+  }
+
+  #dot {
+    width: 3vw;
+  }
+
+  .booking {
+    padding: 4em;
+  }
+
+  #charger {
+    width: 45vw;
+    position: relative;
+    top: 10vh;
+    right: 5vw;
+  }
+
+  #phone {
+    width: 25vw;
+    top: -4vh;
+    left: -40vw;
+  }
+
+  #phone.fade-right {
+    left: 0.85vw;
+  }
+
+  .booking div {
+    padding: 5em;
+    font-size: 20px;
+  }
+
+  .booking button {
+    background-color: #a6cc45;
+    color: white;
+    padding: 0.75em 1em 0.75em 1em;
+    font-size: 17px;
+    width: 16vw;
+    border-radius: 5px;
+  }
+
+  .energy {
+    padding: 4em 8em 4em 8em;
+    font-size: 22px;
+  }
+
+  .left {
+    padding: 2.5em;
+  }
+  .windmill {
+    padding-top: 4em;
+  }
+
+  #mill {
+    width: 18vw;
+  }
+
+  #natur {
+    width: 9vw;
+  }
+
+  .left p {
+    padding-bottom: 1em;
+  }
+
+  .connect {
+    background-color: #414141;
+    color: white;
+    margin: 0;
+    height: 8vh;
+  }
+
+  .connect p {
+    margin: 0;
+    padding: 1.5em;
+    margin-left: 4vw;
+    font-size: 18px;
+  }
+
+  .blog {
+    background-color: #343436;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
