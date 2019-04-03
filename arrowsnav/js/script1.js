@@ -88,3 +88,35 @@ function closeAllSelect(elmnt) {
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
+
+
+
+const newUser = {
+  email: "",
+  first_name: "",
+  last_name:"",
+  country: "",
+  phone: "",
+  password: ""
+
+
+}
+
+function post() {
+  fetch("https://volt224-ca3c.restdb.io/rest/volt", {
+    method: "post",
+    body: JSON.stringify(newUser),
+    headers: {
+      "Content-Type": "application/json; charset=utf-8",
+      "x-apikey": "5ca35a39df5d634f46ecb1ab",
+      "cache-control": "no-cache"
+
+
+    }
+  })
+  .then(res => res.json())
+  
+  }
+
+
+  document.querySelector("submitbtn").addEventListener("click", post);
